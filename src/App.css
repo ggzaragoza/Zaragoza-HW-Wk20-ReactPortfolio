@@ -43,6 +43,10 @@
   margin: 0;
 }
 
+.App {
+  height: 100%;
+}
+
 html, body {
   height: 100%;
   scroll-behavior: smooth;
@@ -73,6 +77,37 @@ header img {
 a {
   color: black;
   text-decoration: none;
+}
+
+#about {
+  display: flex;
+  height: 100%;
+}
+
+#about div {
+  width: 50%;
+  flex-grow: 1;
+  padding: 250px;
+}
+
+#bio {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+h1 {
+  color: red;
+  font-weight: 100;
+  font-size: 60pt;
+  letter-spacing: -1pt;
+  text-align: center;
+}
+
+#headshot {
+  background-image: url("./assets/images/greg4.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 footer {

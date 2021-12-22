@@ -22,7 +22,7 @@ const projects = [
     skills: "Server-Side API, JSON",
     github: "https://github.com/ggzaragoza/Zaragoza-HW-Wk6-WeatherDashboard",
     live: "https://ggzaragoza.github.io/Zaragoza-HW-Wk6-WeatherDashboard/",
-    background: process.env.PUBLIC_URL + "/assets/images/codefront.jpg"
+    background: process.env.PUBLIC_URL + "/assets/images/weather.jpg"
   },
   {
     id: 3,
@@ -42,19 +42,19 @@ const projects = [
   },
   {
     id: 5,
-    name: "CodeFront",
-    skills: "Server-Side API, JSON",
-    github: "https://github.com/ggzaragoza/Zaragoza-HW-Wk6-WeatherDashboard",
-    live: "https://ggzaragoza.github.io/Zaragoza-HW-Wk6-WeatherDashboard/",
-    background: process.env.PUBLIC_URL + "/assets/images/codefront.jpg"
+    name: "Fitness Tracker",
+    skills: "MongoDB",
+    github: "https://github.com/ggzaragoza/Zaragoza-HW-Wk18-FitnessTracker",
+    live: "https://floating-bayou-24387.herokuapp.com/",
+    background: process.env.PUBLIC_URL + "/assets/images/fitness.jpg"
   },
   {
     id: 6,
-    name: "The Quiz Template",
-    skills: "JavaScript, DOM API",
-    github: "https://github.com/ggzaragoza/Zaragoza-HW-Wk4-CodeQuiz",
-    live: "https://ggzaragoza.github.io/Zaragoza-HW-Wk4-CodeQuiz/",
-    background: process.env.PUBLIC_URL + "/assets/images/codequiz.png"
+    name: "MyBudget",
+    skills: "MongoDB, Webpack, Progressive Web Applications",
+    github: "https://github.com/ggzaragoza/Zaragoza-HW-Wk19-PWABudget",
+    live: "https://whispering-wave-09325.herokuapp.com/",
+    background: process.env.PUBLIC_URL + "/assets/images/stockmarket.jpg"
   },
 ];
 

@@ -105,13 +105,13 @@ h1 {
 }
 
 #headshot {
-  background-image: url("./assets/images/greg4.jpg");
+  background-image: url("../public/assets/images/greg4.jpg");
   background-size: cover;
   background-position: center;
 }
 
 #work {
-  padding: 50px;
+  /* padding: 50px; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;

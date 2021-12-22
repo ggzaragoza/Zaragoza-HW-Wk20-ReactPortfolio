@@ -10,17 +10,26 @@ const projects = [
   {
     id: 1,
     name: "Rodemap",
-    skills: "Blah blah"
+    skills: "Google Maps API",
+    github: "https://github.com/Baiterade/ConcertMaps",
+    live: "https://baiterade.github.io/ConcertMaps/",
+    background: process.env.PUBLIC_URL + "/assets/images/rodemap.png"
   },
   {
     id: 2,
     name: "CodeFront",
-    skills: "Sum sum"
+    skills: "Server-Side API, JSON",
+    github: "https://github.com/ggzaragoza/Zaragoza-HW-Wk6-WeatherDashboard",
+    live: "https://ggzaragoza.github.io/Zaragoza-HW-Wk6-WeatherDashboard/",
+    background: process.env.PUBLIC_URL + "/assets/images/codefront.jpg"
   },
   {
     id: 3,
     name: "The Quiz Template",
-    skills: "Got skillz brah"
+    skills: "JavaScript, DOM API",
+    github: "https://github.com/ggzaragoza/Zaragoza-HW-Wk4-CodeQuiz",
+    live: "https://ggzaragoza.github.io/Zaragoza-HW-Wk4-CodeQuiz/",
+    background: process.env.PUBLIC_URL + "/assets/images/codequiz.png"
   }
 ];
 

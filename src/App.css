@@ -119,7 +119,7 @@ h1 {
 }
 
 .sample {
-  flex: 1 0 33%;
+  flex: 1 0 700px;
   background-size: cover;
   background-position: center;
   height: 50vh;
@@ -222,4 +222,111 @@ footer {
 h5 {
   letter-spacing: 1pt;
   font-weight: 100;
+}
+
+@media screen and (max-width: 1920px) {
+  #about div {
+      padding: 175px;
+  }
+      
+  #bio h1 {
+      font-size: 48pt;
+  }
+}
+
+@media screen and (max-width: 1536px) {
+  #about div {
+      padding: 100px;
+  }
+
+  #bio h1 {
+      font-size: 42px;
+  }
+
+  #work {
+      padding: 0;
+      padding-top: 50px;
+      padding-bottom: 50px;
+  }
+
+  .sample {
+      width: 100%;
+      height: auto;
+      flex: 1 0 1024px;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  header {
+      position: relative;
+  }
+
+  #about {
+      flex-direction: column;
+  }
+
+  #about div {
+      width: 100%;
+      padding: 50px;
+  }
+
+  #headshot {
+      background-size: cover;
+      background-position: top;
+      height: 100%;
+  }
+
+  #bio {
+      height: auto;
+  }
+
+  #contact {
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+  }
+
+  #contact img {
+      height: 30px;
+  }
+
+  #contact p {
+      margin: 0;
+      margin-left: 10px;
+      font-size: 24px;
+  }
+
+  #address div {
+      margin: 0 auto;
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 15px;
+  }
+
+  #address img {
+      display: none;
+      visibility: hidden;
+      z-index: -1;
+  }
+
+  #socials img {
+      margin: 15px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #bio h1 {
+      font-size: 36px;
+  }
+
+  .sample {
+      flex: 1 0 828px;
+  }
+}
+
+@media screen and (max-width: 828px) {
+  header, #about, .sample, #contact {
+      flex: 1 0 400px;
+  }
 }

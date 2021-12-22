@@ -34,11 +34,11 @@ const projects = [
   },
   {
     id: 4,
-    name: "Rodemap",
-    skills: "Google Maps API",
-    github: "https://github.com/Baiterade/ConcertMaps",
-    live: "https://baiterade.github.io/ConcertMaps/",
-    background: process.env.PUBLIC_URL + "/assets/images/rodemap.png"
+    name: "The Sword",
+    skills: "MySQL, Express.js, Handlebars",
+    github: "https://github.com/BrigittePowers/proj2-text-adventure",
+    live: "https://endless-ocean-34575.herokuapp.com/",
+    background: process.env.PUBLIC_URL + "/assets/images/thesword-homepage.jpg"
   },
   {
     id: 5,

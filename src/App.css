@@ -119,10 +119,10 @@ h1 {
 }
 
 .sample {
-  flex: 1 0 400px;
+  flex: 1 0 33%;
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 50vh;
 }
 
 .sample button {
@@ -181,6 +181,36 @@ h1 {
   margin: 15px;
   padding: 0px;
   font-size: 12pt;
+}
+
+#contact {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+#contact img {
+  padding: 0;
+  width: auto;
+  height: 24px;
+  margin-right: 15px;
+}
+
+#socials img {
+  margin-right: 0;
+  margin-left: 15px;
+}
+
+#contact p {
+  display: inline;
+  padding: 0;
+  margin-right: 75px;
+  font-size: 28px;
+  text-align: center;
+}
+
+#address div {
+  display: inline;
 }
 
 footer {

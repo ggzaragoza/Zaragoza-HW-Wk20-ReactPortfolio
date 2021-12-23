@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Zaragoza-HW-Wk20-ReactPortfolio/static/css/main.5990b6a7.css",
+    "main.css": "/Zaragoza-HW-Wk20-ReactPortfolio/static/css/main.acdf8a52.css",
     "main.js": "/Zaragoza-HW-Wk20-ReactPortfolio/static/js/main.eb360f67.js",
     "static/js/787.5d1e72c8.chunk.js": "/Zaragoza-HW-Wk20-ReactPortfolio/static/js/787.5d1e72c8.chunk.js",
     "static/media/greg4.jpg": "/Zaragoza-HW-Wk20-ReactPortfolio/static/media/greg4.00e5e1ecce7f58e3befe.jpg",
     "static/media/aug21icons.gif": "/Zaragoza-HW-Wk20-ReactPortfolio/static/media/aug21icons.9d235f6922df33e9e90f.gif",
     "index.html": "/Zaragoza-HW-Wk20-ReactPortfolio/index.html",
-    "main.5990b6a7.css.map": "/Zaragoza-HW-Wk20-ReactPortfolio/static/css/main.5990b6a7.css.map",
+    "main.acdf8a52.css.map": "/Zaragoza-HW-Wk20-ReactPortfolio/static/css/main.acdf8a52.css.map",
     "main.eb360f67.js.map": "/Zaragoza-HW-Wk20-ReactPortfolio/static/js/main.eb360f67.js.map",
     "787.5d1e72c8.chunk.js.map": "/Zaragoza-HW-Wk20-ReactPortfolio/static/js/787.5d1e72c8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5990b6a7.css",
+    "static/css/main.acdf8a52.css",
     "static/js/main.eb360f67.js"
   ]
 }

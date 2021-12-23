@@ -10,8 +10,8 @@ function Projects(props) {
                     <div className="project">
                         <h2>{project.name}</h2>
                         <p>{project.skills}</p>
-                        <a href={project.github}><button>GITHUB</button></a>
-                        <a href={project.live}><button>LIVE</button></a>
+                        <a href={project.github} target="_blank" rel="noreferrer"><button>GITHUB</button></a>
+                        <a href={project.live} target="_blank" rel="noreferrer"><button>LIVE</button></a>
                     </div>
                 </div>
             </div>

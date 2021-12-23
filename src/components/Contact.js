@@ -36,10 +36,10 @@ function Contact() {
     </div>
 
     <div id="socials">
-        <a href="https://www.github.com/ggzaragoza/"><img href="https://www.github.com/ggzaragoza/" src={githubLogo} alt="Github icon"/></a>
-        <a href="https://www.linkedin.com/in/gregzaragoza/"><img href="https://www.linkedin.com/in/gregzaragoza/" src={linkedinLogo} alt="LinkedIn icon"/></a>
-        <a href="https://www.instagram.com/gregzaragoza/"><img href="https://www.instagram.com/gregzaragoza/" src={igLogo} alt="Instagram icon"/></a>
-        <a href="https://www.dropbox.com/s/wecoeuqmdpty3ej/Greg%20Zaragoza%20-%20Sep.%202021%20Resume.pdf?dl=0">
+        <a href="https://www.github.com/ggzaragoza/" target="_blank" rel="noreferrer"><img href="https://www.github.com/ggzaragoza/" src={githubLogo} alt="Github icon"/></a>
+        <a href="https://www.linkedin.com/in/gregzaragoza/" target="_blank" rel="noreferrer"><img href="https://www.linkedin.com/in/gregzaragoza/" src={linkedinLogo} alt="LinkedIn icon"/></a>
+        <a href="https://www.instagram.com/gregzaragoza/" target="_blank" rel="noreferrer"><img href="https://www.instagram.com/gregzaragoza/" src={igLogo} alt="Instagram icon"/></a>
+        <a href="https://www.dropbox.com/s/wecoeuqmdpty3ej/Greg%20Zaragoza%20-%20Sep.%202021%20Resume.pdf?dl=0" target="_blank" rel="noreferrer">
             <img href="https://www.dropbox.com/s/wecoeuqmdpty3ej/Greg%20Zaragoza%20-%20Sep.%202021%20Resume.pdf?dl=0"
             src={dropboxLogo}
             alt="Dropbox icon"/>

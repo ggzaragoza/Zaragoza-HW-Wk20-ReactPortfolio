@@ -243,16 +243,16 @@ h5 {
       font-size: 42px;
   }
 
-  #work {
+  /* #work {
       padding: 0;
       padding-top: 50px;
       padding-bottom: 50px;
-  }
+  } */
 
   .sample {
-      width: 100%;
-      height: auto;
-      flex: 1 0 1024px;
+      width: 50vw;
+      height: 33.3vh;
+      flex: 1 0 513px;
   }
 }
 
@@ -279,6 +279,12 @@ h5 {
   #bio {
       height: auto;
   }
+
+  .sample {
+    width: 50vw;
+    height: 33.3vh;
+    /* flex: 1 0 900px; */
+}
 
   #contact {
       flex-direction: column;
@@ -320,13 +326,19 @@ h5 {
       font-size: 36px;
   }
 
-  .sample {
+  /* .sample {
       flex: 1 0 828px;
-  }
+  } */
 }
 
 @media screen and (max-width: 828px) {
-  header, #about, .sample, #contact {
+  header, #about, #contact {
       flex: 1 0 400px;
+  }
+
+  .sample {
+      height: 50vh;
+      width: 100vw;
+      flex: 1 0 415px;
   }
 }

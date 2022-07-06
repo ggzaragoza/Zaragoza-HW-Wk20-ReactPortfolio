@@ -39,8 +39,8 @@ function Contact() {
         <a href="https://www.github.com/ggzaragoza/" target="_blank" rel="noreferrer"><img href="https://www.github.com/ggzaragoza/" src={githubLogo} alt="Github icon"/></a>
         <a href="https://www.linkedin.com/in/gregzaragoza/" target="_blank" rel="noreferrer"><img href="https://www.linkedin.com/in/gregzaragoza/" src={linkedinLogo} alt="LinkedIn icon"/></a>
         <a href="https://www.instagram.com/gregzaragoza/" target="_blank" rel="noreferrer"><img href="https://www.instagram.com/gregzaragoza/" src={igLogo} alt="Instagram icon"/></a>
-        <a href="https://www.dropbox.com/s/fpn0q2b48mj4y6z/Greg%20Zaragoza%20-%20July%202022%20Resume.pdf?dl=0" target="_blank" rel="noreferrer">
-            <img href="https://www.dropbox.com/s/fpn0q2b48mj4y6z/Greg%20Zaragoza%20-%20July%202022%20Resume.pdf?dl=0"
+        <a href="https://www.dropbox.com/s/uj5jn6g3kxkmoqe/Greg%20Zaragoza%20-%20July%202022%20Resume.pdf?dl=0" target="_blank" rel="noreferrer">
+            <img href="https://www.dropbox.com/s/uj5jn6g3kxkmoqe/Greg%20Zaragoza%20-%20July%202022%20Resume.pdf?dl=0"
             src={dropboxLogo}
             alt="Dropbox icon"/>
         </a>

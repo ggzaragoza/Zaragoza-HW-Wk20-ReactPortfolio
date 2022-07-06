@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Zaragoza-HW-Wk20-ReactPortfolio/static/css/main.acdf8a52.css",
-    "main.js": "/Zaragoza-HW-Wk20-ReactPortfolio/static/js/main.47b3178f.js",
-    "static/js/787.5d1e72c8.chunk.js": "/Zaragoza-HW-Wk20-ReactPortfolio/static/js/787.5d1e72c8.chunk.js",
-    "static/media/greg4.jpg": "/Zaragoza-HW-Wk20-ReactPortfolio/static/media/greg4.00e5e1ecce7f58e3befe.jpg",
-    "static/media/aug21icons.gif": "/Zaragoza-HW-Wk20-ReactPortfolio/static/media/aug21icons.9d235f6922df33e9e90f.gif",
-    "index.html": "/Zaragoza-HW-Wk20-ReactPortfolio/index.html",
-    "main.acdf8a52.css.map": "/Zaragoza-HW-Wk20-ReactPortfolio/static/css/main.acdf8a52.css.map",
-    "main.47b3178f.js.map": "/Zaragoza-HW-Wk20-ReactPortfolio/static/js/main.47b3178f.js.map",
-    "787.5d1e72c8.chunk.js.map": "/Zaragoza-HW-Wk20-ReactPortfolio/static/js/787.5d1e72c8.chunk.js.map"
+    "main.css": "/static/css/main.98e23557.css",
+    "main.js": "/static/js/main.c2efce8f.js",
+    "static/js/787.5d1e72c8.chunk.js": "/static/js/787.5d1e72c8.chunk.js",
+    "static/media/greg4.jpg": "/static/media/greg4.00e5e1ecce7f58e3befe.jpg",
+    "static/media/aug21icons.gif": "/static/media/aug21icons.9d235f6922df33e9e90f.gif",
+    "index.html": "/index.html",
+    "main.98e23557.css.map": "/static/css/main.98e23557.css.map",
+    "main.c2efce8f.js.map": "/static/js/main.c2efce8f.js.map",
+    "787.5d1e72c8.chunk.js.map": "/static/js/787.5d1e72c8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.acdf8a52.css",
-    "static/js/main.47b3178f.js"
+    "static/css/main.98e23557.css",
+    "static/js/main.c2efce8f.js"
   ]
 }

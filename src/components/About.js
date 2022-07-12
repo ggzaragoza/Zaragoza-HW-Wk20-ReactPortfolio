@@ -8,7 +8,7 @@ function About() {
         <section id="about">
 
             <div id="bio">
-                <h1>Greg Zaragoza is a graphic designer, photographer, and web developer from and based in San Antonio, Texas.</h1>
+                <h1>Greg Zaragoza is a <span className="bioBold">graphic designer</span>, <span className="bioBold">photographer</span>, and <span className="bioBold">web developer</span> from and based in San Antonio, Texas.</h1>
             </div>
 
             <div id="headshot"></div>

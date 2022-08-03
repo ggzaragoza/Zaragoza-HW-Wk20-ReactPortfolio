@@ -51,13 +51,17 @@ a {
   padding: 250px;
 }
 
-#bio {
+#bio, #bio2 {
   display: flex;
   height: 100%;
   align-items: center;
 }
 
-h1 {
+#bio2 {
+  background-color: red;
+}
+
+#bio h1, #bio2 h1 {
   /* color: red; */
   font-weight: 400;
   font-size: 60pt;
@@ -67,6 +71,11 @@ h1 {
 
 .bioBold {
   color: red;
+  font-weight: 900;
+}
+
+.bioBold2 {
+  color: white;
   font-weight: 900;
 }
 

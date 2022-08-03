@@ -7,6 +7,8 @@ import Projects from "./Projects";
 import Contact from "./Contact";
 import Footer from "./Footer";
 
+import projects from "../utils/projectlists.js";
+
 function About() {
   return (
     <div>
@@ -22,7 +24,7 @@ function About() {
           </section>
       </div>
 
-      {/* <Projects /> */}
+      <Projects projects={projects}/>
       <Contact />
       <Footer />
     </div>

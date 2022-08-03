@@ -20,7 +20,7 @@ function Landing(props) {
                 <h1>Greg Zaragoza is a <span className="bioBold">graphic designer</span>.</h1>
             </div>
 
-            <div id="bio2" onClick={setField(field[1])} onClick={() => navigate("/"+`${field[1]}`)}>
+            <div id="bio2" onClick={() => navigate("/"+`${field[1]}`)}>
                 <h1>Greg Zaragoza is a <span className="bioBold2">web developer</span>.</h1>
             </div>
 

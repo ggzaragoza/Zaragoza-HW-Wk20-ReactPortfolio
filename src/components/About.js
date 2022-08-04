@@ -8,7 +8,7 @@ import Projects from "./Projects";
 import Contact from "./Contact";
 import Footer from "./Footer";
 
-import projects from "../utils/projectlists.js";
+import { designProjects, webProjects } from "../utils/projectlists.js";
 
 function About() {
   const { field } = useSite();
@@ -29,8 +29,9 @@ function About() {
           <div id="headshot"></div>
         </section>
       </div>
+      
+      {field==="design" ? <Projects projects={designProjects}/> : <Projects projects={webProjects}/>}
 
-      <Projects projects={projects}/>
       <Contact />
       <Footer />
     </div>

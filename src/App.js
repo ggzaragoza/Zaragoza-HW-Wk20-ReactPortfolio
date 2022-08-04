@@ -9,16 +9,21 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 // import logo from './logo.svg';
 import './App.css';
+import SiteProvider from "./utils/SiteContext";
 
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Routes>
-          <Route exact path="/" element={<Landing />} />
-          <Route exact path="/web" element={<About />} />
-        </Routes>
-      </Router>
+      <SiteProvider>
+        <Router>
+          <Routes>
+            <Route element={<Landing />} exact path="/" />
+            <Route element={<About />} exact path="/design" />
+            <Route element={<About />} exact path="/web" />
+          </Routes>
+        </Router>
+        {/* <Landing /> */}
+      </SiteProvider>
       {/* <Header /> */}
       {/* <About /> */}
       {/* <Projects projects={projects} />

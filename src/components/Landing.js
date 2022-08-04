@@ -1,12 +1,20 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
+import { useSite } from "../utils/SiteContext";
 import { useNavigate } from "react-router-dom";
 import '../App.css';
 // import headshot from "../assets/images/greg4.jpg";
+// import SiteProvider from "../utils/SiteContext";
 
-function Landing(props) {
+export default function Landing() {
+  const { field, pickDesign, pickWeb } = useSite();
+
   const navigate = useNavigate();
 
-  const [field, setField] = useState(["design", "web"]);
+  useEffect(() => {
+    navigate("/"+`${field}`);
+  }, [field])
+
+  // const [field, setField] = useState(["design", "web"]);
 
   // const pickField = () => {
   //   setField
@@ -14,21 +22,25 @@ function Landing(props) {
 
   return (
     <div>
-        <section id="about">
+      {/* <SiteProvider> */}
+      <section id="about">
 
-            <div id="bio" onClick={() => navigate("/"+`${field[0]}`)}>
-                <h1>Greg Zaragoza is a <span className="bioBold">graphic designer</span>.</h1>
-            </div>
+        {/* <div id="bio" onClick={pickDesign} onClick={navigate("/design")}> */}
+        <div id="bio" onClick={pickDesign}>
+            <h1>Greg Zaragoza is a <span className="bioBold">graphic designer</span>.</h1>
+        </div>
 
-            <div id="bio2" onClick={() => navigate("/"+`${field[1]}`)}>
-                <h1>Greg Zaragoza is a <span className="bioBold2">web developer</span>.</h1>
-            </div>
+        <div id="bio2" onClick={pickWeb}>
+            <h1>Greg Zaragoza is a <span className="bioBold2">web developer</span>.</h1>
+        </div>
 
-            {/* <div id="headshot"></div> */}
+        {/* <div id="headshot"></div> */}
 
-        </section>
+      </section>
+      {/* </SiteProvider> */}
     </div>
   );
 }
 
-export default Landing;
+// export default Landing;
+// export SiteProvider;

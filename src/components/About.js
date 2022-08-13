@@ -1,5 +1,6 @@
 import React from "react";
 import { useSite } from "../utils/SiteContext";
+import { useLocation } from "react-router-dom";
 import '../App.css';
 // import headshot from "../assets/images/greg4.jpg";
 
@@ -11,7 +12,9 @@ import Footer from "./Footer";
 import { designProjects, webProjects } from "../utils/projectlists.js";
 
 function About() {
-  const { field } = useSite();
+  const location = useLocation();
+  
+  // const { field } = useSite();
 
   return (
     <div>
@@ -20,17 +23,23 @@ function About() {
       <div>
         <section id="about">
           <div id="bio">
-            {field === "design" ?
-              <h1>Greg Zaragoza is a <span className="bioBold">graphic designer</span> from and based in San Antonio, Texas.</h1> :
-              <h1>Greg Zaragoza is a <span className="bioBold">web developer</span> from and based in San Antonio, Texas.</h1>
-            }  
+            {location.pathname === "/web" ?
+              <h1>Greg Zaragoza is a <span className="bioBold">web developer</span> from and based in San Antonio, Texas.</h1> :
+              <h1>Greg Zaragoza is a <span className="bioBold">graphic designer</span> from and based in San Antonio, Texas.</h1>
+            }
+
+            {/* {field === "web" ?
+              <h1>Greg Zaragoza is a <span className="bioBold">web developer</span> from and based in San Antonio, Texas.</h1> :
+              <h1>Greg Zaragoza is a <span className="bioBold">graphic designer</span> from and based in San Antonio, Texas.</h1>
+            } */}
           </div>
 
           <div id="headshot"></div>
         </section>
       </div>
       
-      {field==="design" ? <Projects projects={designProjects}/> : <Projects projects={webProjects}/>}
+      {location.pathname === "web" ? <Projects projects={webProjects}/> : <Projects projects={designProjects}/>}
+      {/* {field === "web" ? <Projects projects={webProjects}/> : <Projects projects={designProjects}/>} */}
 
       <Contact />
       <Footer />

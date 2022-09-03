@@ -11,7 +11,7 @@ import Footer from "./Footer";
 
 import { designProjects, webProjects } from "../utils/projectlists.js";
 
-function About() {
+function About({ field }) {
   const location = useLocation();
   
   // const { field } = useSite();
@@ -23,7 +23,8 @@ function About() {
       <div>
         <section id="about">
           <div id="bio">
-            {location.pathname === "/web" ?
+            {/* {location.pathname === "/web" ? */}
+            {field === "web" ?
               <h1>Greg Zaragoza is a <span className="bioBold">web developer</span> from and based in San Antonio, Texas.</h1> :
               <h1>Greg Zaragoza is a <span className="bioBold">graphic designer</span> from and based in San Antonio, Texas.</h1>
             }
@@ -38,8 +39,8 @@ function About() {
         </section>
       </div>
       
-      {location.pathname === "web" ? <Projects projects={webProjects}/> : <Projects projects={designProjects}/>}
-      {/* {field === "web" ? <Projects projects={webProjects}/> : <Projects projects={designProjects}/>} */}
+      {/* {location.pathname === "web" ? <Projects projects={webProjects}/> : <Projects projects={designProjects}/>} */}
+      {field === "web" ? <Projects projects={webProjects}/> : <Projects projects={designProjects}/>}
 
       <Contact />
       <Footer />

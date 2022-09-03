@@ -24,7 +24,8 @@ function Projects(props) {
                                 <Route element={<ProjectPage />} exact path={"/project/" + `${project.link}`}/>
                             </Router> */}
                         <a href={project.github} target="_blank" rel="noreferrer"><button>GITHUB</button></a>
-                        <a href={project.live} target="_blank" rel="noreferrer"><button>LIVE</button></a>
+                        <a href={"/projects/" + project.name} target="_blank" rel="noreferrer"><button>LIVE</button></a>
+                        {/* <a href={project.live} target="_blank" rel="noreferrer"><button>LIVE</button></a> */}
                     </div>
                 </div>
             </div>

@@ -9,7 +9,7 @@ import Projects from "./Projects";
 import Contact from "./Contact";
 import Footer from "./Footer";
 
-import { designProjects, webProjects } from "../utils/projectlists.js";
+import projects from "../utils/projectlists.js";
 
 function About({ field }) {
   const location = useLocation();
@@ -40,7 +40,7 @@ function About({ field }) {
       </div>
       
       {/* {location.pathname === "web" ? <Projects projects={webProjects}/> : <Projects projects={designProjects}/>} */}
-      {field === "web" ? <Projects projects={webProjects}/> : <Projects projects={designProjects}/>}
+      <Projects projects={ projects.filter(project => project.field === field) } />
 
       <Contact />
       <Footer />

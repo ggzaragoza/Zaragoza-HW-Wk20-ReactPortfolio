@@ -12,9 +12,12 @@ import './App.css';
 import SiteProvider from "./utils/SiteContext";
 import ProjectPage from "./components/ProjectPage";
 
+import projects from "./utils/projectlists.js";
+
 function App() {
-  let { project } = useParams();
-  
+  // const { project } = useParams();
+  // const title = project;
+
   return (
     <div className="App">
       {/* <SiteProvider> */}
@@ -23,7 +26,7 @@ function App() {
             <Route element={<Landing />} exact path="/" />
             <Route element={<About field="design" />} exact path="/design" />
             <Route element={<About field="web"/>} exact path="/web" />
-            <Route element={<ProjectPage />} path={"/projects/:" + project} />
+            <Route element={<ProjectPage projects={projects} />} path={"/projects/:name"}/>
           </Routes>
         </Router>
         {/* <Landing /> */}

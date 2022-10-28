@@ -4,7 +4,6 @@
         name: "Rodemap",
         link: "rodemap",
         skills: "Google Maps API",
-        description: "Have you ever loved an artist so much that you’d do anything to see all of their shows? Have you ever woken up with the urge to stalk someone? Have you ever been slapped with a restraining order? All of those things could happen with your new favorite concert app, Rodemap! Stalking. Musicians. Live. With this application, a crazed stan like you can enter an artist of your choosing, and if they’re currently on tour or planning to do so, all of their planned stops will be marked conveniently right onto the map! Click any stop to see where and when they’ll be performing and a route to get there, along with a link to buy your ticket(s). Rodemap saves your searches too, making it easy to keep track of multiple artists’ schedules at once.",
         github: "https://github.com/Baiterade/ConcertMaps",
         live: "https://baiterade.github.io/ConcertMaps/",
         background: process.env.PUBLIC_URL + "/assets/images/rodemap.png",

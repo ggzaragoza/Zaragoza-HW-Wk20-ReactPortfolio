@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useParams } from "react-router";
 import '../App.css';
 
-import Sample from '../projects/sample.mdx';
-
 export default function ProjectPage({ projects }) {
   const { name } = useParams();
+
+  const [currentProject, setCurrentProject] = useState();
+
+  useEffect(() => {
+    import(`../projects/${name}.mdx`).then(module => {
+      setCurrentProject(module.default)
+    })
+  }, [name]);
 
   return (
     <div className="project-layout">
@@ -18,7 +24,8 @@ export default function ProjectPage({ projects }) {
             {/* <p>{project.description}</p> */}
 
             {/* <div><Sample /></div> */}
-            <div className="project-desc"><Sample /></div>
+            {/* <div className="project-desc"><Sample /></div> */}
+            <div className="project-desc">{currentProject}</div>
 
           </div>))
         }

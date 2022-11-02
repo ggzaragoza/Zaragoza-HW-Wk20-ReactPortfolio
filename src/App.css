@@ -161,27 +161,32 @@ a {
 }
 
 .project-layout {
-  display: flex;
-  height: 100vh;
+  /* display: flex;
+  height: 100vh; */
+  padding: 60px;
 }
 
-.project-layout div {
+/* .project-layout div {
   width: 50%;
   flex-grow: 1;
-}
+} */
 
-.photo-box {
+/* .photo-box {
   background-color: red;
-}
+} */
 
-.project-info {
+/* .project-info {
   display: flex;
   padding: 60px;
   width: 100%;
-}
+} */
 
 .project-desc {
   margin-top: 30px;
+}
+
+.proj-image {
+  width: 100%;
 }
 
 #contact {

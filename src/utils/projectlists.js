@@ -7,6 +7,7 @@
         github: "https://github.com/Baiterade/ConcertMaps",
         live: "https://baiterade.github.io/ConcertMaps/",
         background: process.env.PUBLIC_URL + "/assets/images/rodemap.png",
+        images: ["rodemap1.png", "rodemap2.png", "rodemap3.png"],
         field: "web"
       },
       {

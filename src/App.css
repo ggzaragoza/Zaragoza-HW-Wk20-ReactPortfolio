@@ -161,32 +161,34 @@ a {
 }
 
 .project-layout {
-  /* display: flex;
-  height: 100vh; */
+  display: flex;
+  /* height: 100vh; */
   padding: 60px;
 }
 
 /* .project-layout div {
   width: 50%;
   flex-grow: 1;
-} */
-
-/* .photo-box {
-  background-color: red;
-} */
-
-/* .project-info {
-  display: flex;
   padding: 60px;
-  width: 100%;
 } */
+
+.project-info {
+  /* display: flex;
+  padding: 60px; */
+  width: 100%;
+  padding-right: 85px;
+}
 
 .project-desc {
   margin-top: 30px;
 }
 
-.proj-image {
+.photo-box {
   width: 100%;
+}
+
+.proj-image {
+  margin-bottom: 35px;
 }
 
 #contact {

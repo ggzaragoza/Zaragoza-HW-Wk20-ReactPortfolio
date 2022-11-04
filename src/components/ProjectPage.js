@@ -13,67 +13,29 @@ export default function ProjectPage({ projects }) {
     })
   }, [name]);
 
-  // const photoBox = document.getElementsByClassName("photo-box");
-  
-
   return (
     <div className="project-layout">
+
+      <div className="project-info">
         {projects.filter(project => name === project.link).map(project => (
           <div key={project.id}>
             <h1>{project.name}</h1>
             <h3>{project.skills}</h3>
             <div className="project-desc">{currentProject}</div>
-
-            {project.images.map(image => 
-              <img src={require(`../../public/assets/images/${image}`)} alt="" width="500" />
-            )}
-
-          </div>          
+          </div>
         ))}
+      </div>
+
+      <div className="photo-box">
+        {projects.filter(project => name === project.link).map(project => (
+          <div key={project.id}>
+            {project.images.map(image => 
+              <img className="proj-image" src={require(`../../public/assets/images/${image}`)} alt="" width="100%" />
+            )}
+          </div>
+        ))}
+      </div>
+
     </div>
   );
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      {/* // <div className="photo-box">
-      //   {projects.filter(project => name === project.link).map(
-      //     project => (
-           
-      //       // {console.log(project.images)}
-      //       // <div key={project.id}>
-      //         // {
-      //       project.images.forEach(image => 
-      //         // {console.log(image)},
-      //         // {var img = document.createElement("img");
-      //         // img.src = (require("../../public/assets/images/" + `${image}`));
-      //         // img.alt = ("");
-      //         // this.appendChild(img);
-      //         // // img.appendChild(photoBox);
-      //         // }
-      //         <div key={project.id}>
-      //           <img className="proj-image" src={require(`../../public/assets/images/${image}`).default} alt="" />
-      //         </div>
-
-      //         // console.log(image)
-              
-      //           // document.createElement(<img src={"../../public/assets/images/" + `${image}`} alt=""></img>)
-      //       )
-            
-      //     ))
-      //   }
-      // </div> */}

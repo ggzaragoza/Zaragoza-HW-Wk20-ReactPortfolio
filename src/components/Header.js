@@ -6,18 +6,23 @@ import gzLogo from "../assets/images/aug21icons.gif";
 
 function Header() {
   const { pickDesign, pickWeb } = useSite();
+  const field = localStorage.getItem("field");
 
   return (
     <div>      
         <header>
           <ul>
-            <li className="header-left"><a href="/" onClick={pickDesign}>DESIGN</a></li>
-            <li className="header-left"><a href="/" onClick={pickWeb}>WEB</a></li>
+            {field === "web" || !field ?
+              <li><a href="/" onClick={pickDesign}>DESIGN</a></li> :
+              <li><a href="/" onClick={pickWeb}>WEB</a></li>
+            } 
           </ul>
           
           <img src={gzLogo} alt="Rotating gif of GZ initial icons" style={{width: "50px", height: "50px"}}/>
 
-          <ul><li><a href="#contact">CONTACT</a></li></ul>
+          <ul>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
         </header>
     </div>
   );

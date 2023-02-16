@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router";
 import '../App.css';
 
+import Header from "./Header";
+import Footer from "./Footer";
+
 export default function ProjectPage({ projects }) {
   const { name } = useParams();
 
@@ -14,28 +17,34 @@ export default function ProjectPage({ projects }) {
   }, [name]);
 
   return (
-    <div className="project-layout">
+    <div>
+      <div><Header /></div>
+      
+      <div className="project-layout">
 
-      <div className="project-info">
-        {projects.filter(project => name === project.link).map(project => (
-          <div key={project.id}>
-            <h1>{project.name}</h1>
-            <h3>{project.skills}</h3>
-            <div className="project-desc">{currentProject}</div>
-          </div>
-        ))}
+        <div className="project-info">
+          {projects.filter(project => name === project.link).map(project => (
+            <div key={project.id}>
+              <h1>{project.name}</h1>
+              <h3>{project.skills}</h3>
+              <div className="project-desc">{currentProject}</div>
+            </div>
+          ))}
+        </div>
+
+        <div className="photo-box">
+          {projects.filter(project => name === project.link).map(project => (
+            <div key={project.id}>
+              {project.images.map(image => 
+                <img className="proj-image" src={require(`../../public/assets/images/${image}`)} alt="" width="100%" />
+              )}
+            </div>
+          ))}
+        </div>
+
       </div>
 
-      <div className="photo-box">
-        {projects.filter(project => name === project.link).map(project => (
-          <div key={project.id}>
-            {project.images.map(image => 
-              <img className="proj-image" src={require(`../../public/assets/images/${image}`)} alt="" width="100%" />
-            )}
-          </div>
-        ))}
-      </div>
-
+      <div><Footer /></div>
     </div>
   );
 };

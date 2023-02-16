@@ -1,4 +1,4 @@
-import React, { createContext, useState, useContext } from "react";
+import React, { createContext, useState, useContext, useEffect } from "react";
 // import { useNavigate } from "react-router-dom";
 
 export const SiteContext = createContext();
@@ -7,22 +7,24 @@ export const useSite = () => useContext(SiteContext);
 
 export default function SiteProvider({ children }) {
     // const navigate = useNavigate();
-    const [field, setField] = useState('');
+    // const [field, setField] = useState("web");
 
     const pickDesign = () => {
-        // navigate("/design");
-        return setField("design")
+      if (localStorage.getItem("field") !== "design") {
+        localStorage.setItem("field", "design");
+      };
     };
 
     const pickWeb = () => {
-        // navigate("/web");
-        return setField("web")
+      if (localStorage.getItem("field") !== "web") {
+        localStorage.setItem("field", "web");
+      };
     };
 
-    console.log(field);
+    // console.log(field);
   
     return (
-      <SiteContext.Provider value={{ field, pickDesign, pickWeb }}>
+      <SiteContext.Provider value={{ pickDesign, pickWeb }}>
         {children}
       </SiteContext.Provider>
     );

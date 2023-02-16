@@ -11,14 +11,14 @@ import Footer from "./Footer";
 
 import projects from "../utils/projectlists.js";
 
-function About({ field }) {
+function About() {
   const location = useLocation();
   
-  // const { field } = useSite();
+  const { field } = useSite();
 
   return (
     <div>
-      <Header />
+      <Header field={field}/>
 
       <div>
         <section id="about">

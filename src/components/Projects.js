@@ -1,37 +1,31 @@
-import React, { useEffect} from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+import React from "react";
+import { animated, useSpring } from "@react-spring/web";
 import '../App.css';
 
-import ProjectPage from "./ProjectPage";
-
 function Projects(props) {
-//   const navigate = useNavigate();
+    const springs = useSpring(
+        {
+            from: { opacity: 0 },
+            to: { opacity: 1 }
+        }
+    );
 
-//   useEffect(() => {
-//     navigate("/project/" + `${props.project.link}`);
-//   }, [props.project.link])
-
-  return (
-    <section id="work">
-        {props.projects.map(project => (
-            <div className="sample" style={ {backgroundImage: `url(${project.background})` } }>        
-                <div className="overlay">
-                    <div className="project" key={project.id}>
-                        <h2>{project.name}</h2>
-                        <p>{project.skills}</p>
-                            {/* <Router>
-                                <Route element={<ProjectPage />} exact path={"/project/" + `${project.link}`}/>
-                            </Router> */}
-                        <a href={project.github}><button>GITHUB</button></a>
-                        <a href={"/projects/" + project.link}><button>LIVE</button></a>
-                        {/* <a href={project.live} target="_blank" rel="noreferrer"><button>LIVE</button></a> */}
+    return (
+        <section id="work">
+            {props.projects.map(project => (
+                <animated.div className="sample" style={ {backgroundImage: `url(${project.background})` , ...springs} }>        
+                    <div className="overlay">
+                        <div className="project" key={project.id}>
+                            <h2>{project.name}</h2>
+                            <p>{project.skills}</p>
+                            <a href={project.github}><button>GITHUB</button></a>
+                            <a href={"/projects/" + project.link}><button>LIVE</button></a>
+                        </div>
                     </div>
-                </div>
-            </div>
-        ))}
-    </section>
-  );
+                </animated.div>
+            ))}
+        </section>
+    );
 }
 
 export default Projects;

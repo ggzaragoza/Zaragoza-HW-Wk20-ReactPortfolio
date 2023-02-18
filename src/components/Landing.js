@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-// import { useSite } from "../utils/SiteContext";
-// import { useNavigate } from "react-router-dom";
 import '../App.css';
 
 import Header from "./Header";
@@ -25,11 +23,7 @@ export default function Landing() {
   return (
     <div>
       <Header />
-
-      <Projects projects={ 
-        projects.filter(project => project.field === newField)
-      } />
-
+      <Projects projects={ projects.filter(project => project.field === newField) } />
       <Contact />
       <Footer />
     </div>

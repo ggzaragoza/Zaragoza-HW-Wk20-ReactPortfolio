@@ -18,8 +18,8 @@ function Projects(props) {
                         <div className="project" key={project.id}>
                             <h2>{project.name}</h2>
                             <p>{project.skills}</p>
-                            <a href={project.github}><button>GITHUB</button></a>
-                            <a href={"/projects/" + project.link}><button>LIVE</button></a>
+                            {/* <a href={project.github}><button>GITHUB</button></a> */}
+                            <a href={"/projects/" + project.link}><button>VIEW</button></a>
                         </div>
                     </div>
                 </animated.div>

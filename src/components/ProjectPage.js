@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router";
+import { animated, useSpring } from "@react-spring/web";
 import '../App.css';
 
 import Header from "./Header";
+// import Gallery from "./Gallery";
 import Footer from "./Footer";
 
 export default function ProjectPage({ projects }) {
@@ -16,23 +18,34 @@ export default function ProjectPage({ projects }) {
     })
   }, [name]);
 
+  const springs = useSpring(
+    {
+        from: { opacity: 0 },
+        to: { opacity: 1 }
+    }
+  );
+
   return (
     <div>
       <div><Header /></div>
       
       <div className="project-layout">
 
-        <div className="project-info">
+        <div>
           {projects.filter(project => name === project.link).map(project => (
-            <div key={project.id}>
-              <h1>{project.name}</h1>
-              <h3>{project.skills}</h3>
+            <div key={project.id} className="project-info">
+              <div>
+                <h1>{project.name}</h1>
+                <h2>{project.skills}</h2>
+                <a href={project.github}><button>GITHUB</button></a>
+                <a href={project.live}><button>LIVE</button></a>
+              </div>
               <div className="project-desc">{currentProject}</div>
             </div>
           ))}
         </div>
 
-        <div className="photo-box">
+        <animated.div className="photo-box" style={ {...springs} }>
           {projects.filter(project => name === project.link).map(project => (
             <div key={project.id}>
               {project.images.map(image => 
@@ -40,9 +53,11 @@ export default function ProjectPage({ projects }) {
               )}
             </div>
           ))}
-        </div>
+        </animated.div>
 
       </div>
+
+      {/* <div><Gallery project={ projects }/></div> */}
 
       <div><Footer /></div>
     </div>

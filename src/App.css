@@ -12,8 +12,8 @@ html, body {
   height: 100%;
   scroll-behavior: smooth;
   font-family: 'Barlow', sans-serif;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
 header {
@@ -26,6 +26,7 @@ header {
   height: var(--header-height);
   width: 100%;
   z-index: 999;
+  border-bottom: 1px solid rgba(159, 159, 159, 0.615);
 }
 
 header ul {
@@ -38,8 +39,8 @@ header ul {
 }
 
 .header-left {
-  display: inline;
-  margin-right: 30px;
+  display: inline-block;
+  margin-left: 30px;
 }
 
 /* header img {
@@ -127,6 +128,14 @@ a {
   padding-right: 20px;
   padding-left: 20px;
   cursor: pointer;
+  transition: 0.25s ease-in-out;
+}
+
+.sample button:hover {
+  border: 1px solid white;
+  /* border-radius: 50px; */
+  background-color: white;
+  color: red;
 }
 
 .overlay {
@@ -141,7 +150,7 @@ a {
   align-items: center;
   z-index: 1;
   opacity: 0;
-  transition: 1s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 /* #sample1 {
@@ -173,9 +182,7 @@ a {
 }
 
 .project-layout {
-  display: flex;
-  /* height: 100vh; */
-  padding: 60px;
+  margin-top: 55px;
 }
 
 /* .project-layout div {
@@ -185,21 +192,68 @@ a {
 } */
 
 .project-info {
-  /* display: flex;
-  padding: 60px; */
-  width: 100%;
-  padding-right: 85px;
+  display: flex;
+  /* flex-wrap: wrap;
+  flex-direction: row; */
+  /* flex: 1 0 700px; */
+  justify-content: space-between;
+  /* padding: 60px; */
+  /* width: 100%; */
+  /* text-align: center; */
+  /* padding-right: 85px; */
+}
+
+.project-info h1 {
+  font-weight: 400;
+  font-size: 46pt;
+}
+
+.project-info h2 {
+  margin-top: 10px;
+  font-weight: 300;
+}
+
+.project-info button {
+  display: inline;
+  margin-top: 30px;
+  margin-left: 2px;
+  margin-right: 3px;
+  border: 1px solid;
+  /* border-radius: 50px; */
+  background-color: transparent;
+  /* color: white; */
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: 'Barlow', sans-serif;
+  padding: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+}
+
+.project-info button:hover {
+  border: 1px solid red;
+  /* border-radius: 50px; */
+  background-color: red;
+  color: white;
 }
 
 .project-desc {
-  margin-top: 30px;
+  /* margin: 75px 325px 100px 325px; */
+  width: 50%;
+  line-height: 18pt;
+  border-left: 1px dashed red;
+  padding-left: 35px;
 }
 
 .photo-box {
   width: 100%;
+  margin-top: 100px;
 }
 
 .proj-image {
+  /* display: block; */
   margin-bottom: 35px;
 }
 

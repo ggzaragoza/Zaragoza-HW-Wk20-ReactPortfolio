@@ -11,18 +11,16 @@ function Header() {
   return (
     <div>      
         <header>
-          <ul>
-            {field === "web" || !field ?
-              <li><a href="/" onClick={pickDesign}>DESIGN</a></li> :
-              <li><a href="/" onClick={pickWeb}>WEB</a></li>
-            } 
-          </ul>
-          
-          <img src={gzLogo} alt="Rotating gif of GZ initial icons" style={{width: "50px", height: "50px"}}/>
-
-          <ul>
-            <li><a href="#contact">CONTACT</a></li>
-          </ul>
+          <div><a href="/"><img src={gzLogo} alt="Rotating gif of GZ initial icons" style={{width: "50px", height: "50px"}}/></a></div>
+          <div>
+            <ul className="header-left">
+              {field === "web" || !field ?
+                <li><a href="/" onClick={pickDesign}>DESIGN</a></li> :
+                <li><a href="/" onClick={pickWeb}>WEB</a></li>
+              } 
+            </ul>
+            <ul className="header-left"><li><a href="#contact">CONTACT</a></li></ul>
+          </div>
         </header>
     </div>
   );

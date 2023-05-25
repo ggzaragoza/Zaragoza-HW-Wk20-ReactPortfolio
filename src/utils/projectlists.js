@@ -18,6 +18,7 @@
         github: "https://github.com/ggzaragoza/Zaragoza-HW-Wk6-WeatherDashboard",
         live: "https://ggzaragoza.github.io/Zaragoza-HW-Wk6-WeatherDashboard/",
         background: process.env.PUBLIC_URL + "/assets/images/weather.jpg",
+        images: ["rodemap1.png", "rodemap2.png", "rodemap3.png"],
         field: "web"
       },
       {
@@ -62,8 +63,7 @@
       },
       {
         id: 1,
-        name: "Design Project 1",
-        skills: "Description 1",
+        name: "TracFone Wireless",
         github: "https://github.com/Baiterade/ConcertMaps",
         live: "https://baiterade.github.io/ConcertMaps/",
         background: process.env.PUBLIC_URL + "/assets/images/rodemap.png",
@@ -71,7 +71,7 @@
       },
       {
         id: 2,
-        name: "Design Project 2",
+        name: "Guadalupe Cultural Arts Center",
         skills: "Description 2",
         github: "https://github.com/ggzaragoza/Zaragoza-HW-Wk6-WeatherDashboard",
         live: "https://ggzaragoza.github.io/Zaragoza-HW-Wk6-WeatherDashboard/",
@@ -80,7 +80,7 @@
       },
       {
         id: 3,
-        name: "Design Project 3",
+        name: "CineFestival",
         skills: "Description 3",
         github: "https://github.com/ggzaragoza/Zaragoza-HW-Wk4-CodeQuiz",
         live: "https://ggzaragoza.github.io/Zaragoza-HW-Wk4-CodeQuiz/",
@@ -89,7 +89,7 @@
       },
       {
         id: 4,
-        name: "Design Project 4",
+        name: "University of Washington",
         skills: "Description 4",
         github: "https://github.com/BrigittePowers/proj2-text-adventure",
         live: "https://endless-ocean-34575.herokuapp.com/",

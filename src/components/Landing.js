@@ -24,7 +24,7 @@ export default function Landing() {
     <div>
       <Header />
       <Projects projects={ projects.filter(project => project.field === newField) } />
-      <Contact />
+      {/* <Contact /> */}
       <Footer />
     </div>
   );

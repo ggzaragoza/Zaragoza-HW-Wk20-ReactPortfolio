@@ -18,7 +18,7 @@
         github: "https://github.com/ggzaragoza/Zaragoza-HW-Wk6-WeatherDashboard",
         live: "https://ggzaragoza.github.io/Zaragoza-HW-Wk6-WeatherDashboard/",
         background: process.env.PUBLIC_URL + "/assets/images/weather.jpg",
-        images: ["rodemap1.png", "rodemap2.png", "rodemap3.png"],
+        images: ["codefront1.png", "codefront2.png"],
         field: "web"
       },
       {

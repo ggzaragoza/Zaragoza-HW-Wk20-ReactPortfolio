@@ -3,6 +3,9 @@ import { useParams } from "react-router";
 import { animated, useSpring } from "@react-spring/web";
 import '../App.css';
 
+import 'lightbox.js-react/dist/index.css'
+import {SlideshowLightbox, initLightboxJS} from 'lightbox.js-react'
+
 import Header from "./Header";
 // import Gallery from "./Gallery";
 import Footer from "./Footer";
@@ -17,6 +20,10 @@ export default function ProjectPage({ projects }) {
       setCurrentProject(module.default)
     })
   }, [name]);
+
+  useEffect(() => {
+    initLightboxJS("905B-1304-0587-0F88", "individual")
+  });
 
   const springs = useSpring(
     {
@@ -48,8 +55,10 @@ export default function ProjectPage({ projects }) {
         <animated.div className="photo-box" style={ {...springs} }>
           {projects.filter(project => name === project.link).map(project => (
             <div key={project.id}>
-              {project.images.map(image => 
-                <img className="proj-image" src={require(`../../public/assets/images/${image}`)} alt="" width="100%" />
+              {project.images.map(image =>
+                <SlideshowLightbox theme="day">
+                  <img className="proj-image" src={require(`../../public/assets/images/${image}`)} alt="" width="100%" />
+                </SlideshowLightbox>
               )}
             </div>
           ))}

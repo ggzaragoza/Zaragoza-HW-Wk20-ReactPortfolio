@@ -19,7 +19,7 @@ function Header() {
                 <li><a href="/" onClick={pickWeb}>WEB</a></li>
               } 
             </ul>
-            <ul className="header-left"><li><a href="#contact">CONTACT</a></li></ul>
+            <ul className="header-left"><li><a href="/contact">CONTACT</a></li></ul>
           </div>
         </header>
     </div>

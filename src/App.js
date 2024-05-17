@@ -5,7 +5,7 @@ import './App.css';
 import Landing from "./components/Landing";
 import About from "./components/About";
 import ProjectPage from "./components/ProjectPage";
-import Contact from "./components/Contact";
+import TestPhotoPage from "./components/TestPhotoPage";
 
 import projects from "./utils/projectlists.js";
 import SiteProvider from "./utils/SiteContext";
@@ -25,7 +25,7 @@ function App() {
             <Route element={<About />} exact path="/design" />
             <Route element={<About />} exact path="/web" />
             <Route element={<ProjectPage projects={projects} />} path={"/projects/:name"}/>
-            <Route element={<Contact />} path={"/:field/#contact"}/>
+            <Route element={<TestPhotoPage />} path={"/contact"}/>
           </Routes>
         </Router>
       </SiteProvider>

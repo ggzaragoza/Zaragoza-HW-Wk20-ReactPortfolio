@@ -37,7 +37,6 @@ export default function ProjectPage({ projects }) {
       <div><Header /></div>
       
       <div className="project-layout">
-
         <div>
           {projects.filter(project => name === project.link).map(project => (
             <div key={project.id} className="project-info">
@@ -64,10 +63,7 @@ export default function ProjectPage({ projects }) {
           ))} */}
           <Gallery name={name}/>
         </animated.div>
-
       </div>
-
-      {/* <div><Gallery project={ projects }/></div> */}
 
       <div><Footer /></div>
     </div>

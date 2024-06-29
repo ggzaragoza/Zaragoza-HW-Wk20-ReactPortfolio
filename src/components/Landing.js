@@ -23,7 +23,8 @@ export default function Landing() {
   return (
     <div>
       <Header />
-      <Projects projects={ projects.filter(project => project.field === newField) } />
+      {/* <Projects projects={ projects.filter(project => project.field === newField) } /> */}
+      <Projects projects={ projects } />
       {/* <Contact /> */}
       <Footer />
     </div>

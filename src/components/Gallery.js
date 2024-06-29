@@ -8,9 +8,7 @@ import { Cloudinary } from "@cloudinary/url-gen";
 import { AdvancedImage } from "@cloudinary/react";
 import '../App.css';
 
-import Header from "./Header";
 import Image from "./Image";
-import Footer from "./Footer";
 
 export default function TestPhotoPage({ name }) {
     const [images, setImages] = useState([]);

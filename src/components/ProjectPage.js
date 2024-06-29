@@ -7,7 +7,7 @@ import 'lightbox.js-react/dist/index.css'
 import {SlideshowLightbox, initLightboxJS} from 'lightbox.js-react'
 
 import Header from "./Header";
-// import Gallery from "./Gallery";
+import Gallery from "./Gallery";
 import Footer from "./Footer";
 
 export default function ProjectPage({ projects }) {
@@ -53,7 +53,7 @@ export default function ProjectPage({ projects }) {
         </div>
 
         <animated.div className="photo-box" style={ {...springs} }>
-          {projects.filter(project => name === project.link).map(project => (
+          {/* {projects.filter(project => name === project.link).map(project => (
             <div key={project.id}>
               {project.images.map(image =>
                 <SlideshowLightbox theme="day">
@@ -61,7 +61,8 @@ export default function ProjectPage({ projects }) {
                 </SlideshowLightbox>
               )}
             </div>
-          ))}
+          ))} */}
+          <Gallery name={name}/>
         </animated.div>
 
       </div>

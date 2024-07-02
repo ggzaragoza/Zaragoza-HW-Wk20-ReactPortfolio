@@ -65,7 +65,7 @@
         id: 1,
         name: "TracFone Wireless",
         link: "tracfone",
-        skills: "Art Direction, Brand Development", 
+        skills: "ART DIRECTION, BRAND DEVELOPMENT", 
         github: "https://github.com/Baiterade/ConcertMaps",
         live: "https://baiterade.github.io/ConcertMaps/",
         background: process.env.PUBLIC_URL + "/assets/images/rodemap.png",

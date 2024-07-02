@@ -17,8 +17,7 @@ function Projects(props) {
                     <div className="overlay">
                         <div className="project" key={project.id}>
                             <h2>{project.name}</h2>
-                            <p>{project.skills}</p>
-                            {/* <a href={project.github}><button>GITHUB</button></a> */}
+                            {/* <p>{project.skills}</p> */}
                             <a href={"/projects/" + project.link}><button>VIEW</button></a>
                         </div>
                     </div>

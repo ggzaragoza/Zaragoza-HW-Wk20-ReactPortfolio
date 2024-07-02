@@ -6,8 +6,7 @@ function Footer() {
   return (
     <div>
         <footer>
-            <h5>&copy;2023 GREG ZARAGOZA</h5><br />
-            <h5>HECHO CON AMOR EN SAN ANTONIO, TX</h5>
+            <h5>&copy;2024 GREG ZARAGOZA // HECHO CON AMOR EN SAN ANTONIO, TX</h5>
         </footer>
     </div>
   );

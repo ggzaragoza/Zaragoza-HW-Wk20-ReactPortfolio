@@ -35,18 +35,18 @@ export default function ProjectPage({ projects }) {
   return (
     <div>
       <div><Header /></div>
+
+      <div className="hero"></div>
       
       <div className="project-layout">
         <div>
           {projects.filter(project => name === project.link).map(project => (
             <div key={project.id} className="project-info">
               <div>
+                <h4>{project.skills}</h4>
                 <h1>{project.name}</h1>
-                <h2>{project.skills}</h2>
-                <a href={project.github}><button>GITHUB</button></a>
-                <a href={project.live}><button>LIVE</button></a>
+                <p className="project-desc">{currentProject}</p>
               </div>
-              <div className="project-desc">{currentProject}</div>
             </div>
           ))}
         </div>
@@ -63,6 +63,7 @@ export default function ProjectPage({ projects }) {
           ))} */}
           <Gallery name={name}/>
         </animated.div>
+
       </div>
 
       <div><Footer /></div>

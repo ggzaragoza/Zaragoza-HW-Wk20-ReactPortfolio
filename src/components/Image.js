@@ -4,6 +4,7 @@ const Image = ({ image }) => {
   return (
     <div>
       <img src={`https://res.cloudinary.com/dmgbnv1lf/image/upload/f_auto,q_auto/${image.public_id}`} alt={'asdf'} />
+      <p>{image.context.custom.caption}</p>
     </div>
   );
 };
